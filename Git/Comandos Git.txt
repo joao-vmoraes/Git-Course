@@ -1,0 +1,98 @@
+====================================================
+	CONFIGS
+
+
+git config --global user.name "nome" = para definir seu nome nos commits.
+
+git config --global user.email "email" = para definir seu email dos commits.
+
+git config 'configuração'= mostra o valor guardado da configuração que vc escolheu, ex: git config user.name = "joão"
+
+git config --list = lista todas as configurações principais.
+
+mkdir 'nome da pasta'  =  cria uma pasta chamada 'nome da pasta'.
+
+cd 'nome da pasta' = abre a pasta.
+
+cd .. = volta uma pasta.
+
+git init  = inicia um repositorio git na pasta.
+
+=====================================
+	VI	
+
+
+vi Readme.md  = Cria e abre ou so abre o arquivo Readme.md.
+
+vai aparecer isso:
+
+~
+~
+~
+~
+~
+~
+~
+~
+
+aperte i para poder entra no modo de inserir conteudo no arquivo, apos isso digite todo o conteudo que voce qeur colocar no arquivo Readme.md, apos concluir, aperte 'esc', vai sair do modo de inserir, apos isso, aperte ":wq" para salvar e sair do arquivo.
+
+========================================
+
+	ESTADOS DOS ARQUIVOS
+
+
+untracked = em nenhuma versao do seu repositorio aquele arquivo existia.
+
+unmodified = arquivo nao foi modificado desde a sua ultima versão no repositorio.
+
+modified = arquivo foi modificado em comparação com a ultima versao do git.
+
+staged = no momento em que a versao for fechada, o arquivo sera levado, e posteriormente voltara a ser unmodified.
+
+git status =  para ver o estado do arquivo no repositorio.
+
+git add 'arquivo' para ser preparado pro commit.
+
+git commit -m "mensagem das suas modificações"= pegue todos os arquivos atuais do repositorio e crie uma nova versao.
+
+============================================
+	LOG
+
+
+git log = pára saber umm relatorio dos commits, sabendo o nome, email, data e  mensagem do commit
+
+git log --decorate = para mais informações, como brench, etc
+
+git log --author="joao" = para listar os commits do autor joao
+
+git shortlog = para listar de uma forma limpa os commits de cada autor e quantidade
+
+git shortlog -sn = lista apenas com a quantidade de commits e cada autor
+
+git log --graph = mostra um grafico mostrando o que que ta acontecendo com os brenchs e versões
+
+================================
+	CHECKOUT E RESET
+
+
+git diff = mostra as alterações feitas
+
+git diff --name-only = mostra apenas o nome dos arquivos modificados
+
+git checkout Readme.md = o arquivo Readme.md tem que estar em estado de "modified" e se voce se arrepender e nao quer mais commitar, e sim, voltar atrás das alterações, use o git checkout Readme.md
+
+git reset HEAD Readme.md = o arquivo Readme.md que esta em estado de "staged" ou seja, pronto pro commit, volta para unmodified
+
+git reset --soft 'hash do commit anterior ao que voce quer apagar' = quando voce faz um commit errado os arquivos commitados volta para o estado de "staged" prontos para serem commitados de novo
+
+git reset --mixed 'hash do commit anterior ao que voce quer apagar' = quando voce faz um commit errado os arquivos commitados volta para o estado de "modified" prontos para serem adicionados
+
+git reset --hard 'hash do commit anterior ao que voce quer apagar' = quando voce faz um commit errado os arquivos commitados volta para o estado de "unmodified" resetando 
+
+=====================================
+	REPOSITORIO
+
+
+git remote add origin 'link do repositorio no github'
+ 
