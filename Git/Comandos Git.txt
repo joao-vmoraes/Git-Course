@@ -95,4 +95,8 @@ git reset --hard 'hash do commit anterior ao que voce quer apagar' = quando voce
 
 
 git remote add origin 'link do repositorio no github'
+
+git remote -v = mostra a chave ssh do repositorio ou o link https
+
+git push -u origin master = envia todas as informações do commit do master para o origin como padrao, ai nas proximas vezes voce so vai precisar de um simples : git push 
  
