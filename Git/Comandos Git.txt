@@ -98,5 +98,31 @@ git remote add origin 'link do repositorio no github'
 
 git remote -v = mostra a chave ssh do repositorio ou o link https
 
-git push -u origin master = envia todas as informações do commit do master para o origin como padrao, ai nas proximas vezes voce so vai precisar de um simples : git push 
- 
+git push -u origin master = envia todas as informações do commit do master para o origin como padrao, ai nas proximas vezes voce so vai precisar de um simples : git push
+
+git commit -am "mensagem" = para adicionar os arquivos e commitar na mesma hora, cuidado, faça antes um git status para ver se esta tudo certo mesmo.
+
+git clone 'SSH-Repository-Key/HTTPS-Repository' 'pasta-do-repositorio-clonado'
+
+======================================================
+
+	BRANCH
+
+o que é um branch? Branch é um ponteiro movel que leva a um commit
+
+por que usar?	
+-poder modificar sem alterar o local principal(master)
+-facilmente desligavem
+-multiplas pessoas trabalhando
+-evita conflitos
+
+como criar?
+
+- git checkout -b 'nome do branch'
+
+git branch = lista os branchs existentes, até o master
+
+git checkout 'nome do branch' = ira entrar no branch selecionado
+
+git branch -D 'nome do branch' = ira deletar o branch selecionado
+
