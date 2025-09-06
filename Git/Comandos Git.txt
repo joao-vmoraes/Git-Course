@@ -169,3 +169,13 @@ git tag -a 1.0.0 -m "Projeto finalizado"
 git tags = lista todas as tags
 
 git push origin master --tags = para subir as tags para o GitHub
+
+
+============================================================
+	DELETE  TAGS AND BRANCHS
+	
+git tag -d 1.0.0 = apaga a tag/release 1.0.0 localmente
+
+git push origin:1.0.0 = apaga a release/tag 1.0.0 no repositorio remoto , no GitHub 	
+
+git push origin:teste = deleta a branch teste do repositorio remoto, no GitHub
