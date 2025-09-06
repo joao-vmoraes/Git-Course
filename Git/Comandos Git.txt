@@ -126,3 +126,13 @@ git checkout 'nome do branch' = ira entrar no branch selecionado
 
 git branch -D 'nome do branch' = ira deletar o branch selecionado
 
+========================================================
+		UNINDO BRANCHES
+		
+	-MERGE
+	-REBASE	
+	
+
+git merge 'nome do branch' = vai mesclar o branch 'nome do branch' com o branch master, Gerando com isso um novo commit
+
+git rebase 'nome do branch' = vai mesclar o branch 'nome do branch' com o branch master, SEM GERAR um novo commit para isso
