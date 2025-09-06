@@ -136,3 +136,17 @@ git branch -D 'nome do branch' = ira deletar o branch selecionado
 git merge 'nome do branch' = vai mesclar o branch 'nome do branch' com o branch master, Gerando com isso um novo commit
 
 git rebase 'nome do branch' = vai mesclar o branch 'nome do branch' com o branch master, SEM GERAR um novo commit para isso
+
+==========================================================
+	.GITIGNORE E GIT STASH
+	
+.gitignore = um arquivo com esse nome em que dentro dele voce pode colocar nome de arquivos que voce nao quer passar em nenhum commit seu mas que precisam ficar na sua maquina.
+
+git stash = usado quando voce esta fazendo modificando arquivos em um branch e precisa mudar algo em outro branch com maior prioridade, voce usa o git stah para guardar as alterações feitas no seu branch atual, evitando possiveis erros e perdas ,e colocando ele em estado de WIP = 'Work In Progress'
+
+git stash aply = feito para aplicar as alterações guardadas no branch atual.
+
+git stash list = lista todos os git stashs atuais
+
+git stash clear = limpa todos os stashs
+
