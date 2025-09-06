@@ -90,6 +90,10 @@ git reset --mixed 'hash do commit anterior ao que voce quer apagar' = quando voc
 
 git reset --hard 'hash do commit anterior ao que voce quer apagar' = quando voce faz um commit errado os arquivos commitados volta para o estado de "unmodified" resetando 
 
+
+
+Git revert 'hash do commit que voce quer modificar' = ele pega as alterações que voce fez no commit selecionado e desfaz em um commit novo, mas sem apagar o commit antigo/com problema
+
 =====================================
 	REPOSITORIO
 
