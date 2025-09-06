@@ -150,3 +150,18 @@ git stash list = lista todos os git stashs atuais
 
 git stash clear = limpa todos os stashs
 
+============================================================
+	ATALHOS GIT
+	
+git config --global alias.s status = o comando status sera trocado pela letra 's' sendo necessario apenas um 'git s' para fazer um git status
+
+============================================================
+	GIT TAGS	
+	
+funciona como se fosse as 'versoes / releases' do aplicativo.
+	
+git tag -a 1.0.0 -m "Projeto finalizado"
+
+git tags = lista todas as tags
+
+git push origin master --tags = para subir as tags para o GitHub
